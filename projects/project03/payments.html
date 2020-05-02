@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Make a Payment</title>
+
+<link rel="stylesheet" href="css/master-02.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<script src="js/jquery.resmenu.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div id="page-wrapper">
+	<div class="menu_container">
+                <ul class="toresponsive">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li class="current-menu-item"><a href="confirmation.html" class="selected">Payments</a></li>
+                </ul>
+            </div>
+        <header class="clearfix">             
+             <div class="full-img">
+                <div class="img-content">
+                    <img src="images/logo.png" alt="App Logo">
+                </div>
+       		 </div>
+        </header>
+        
+        <div class="applications">
+        	<section class="apply" id="large">  
+            	<div class="info">   
+                     <h2>Session Information</h2>
+                        	<div class="floats">
+                                <p><strong>Instructor:</strong></p>
+                                <p><strong>Session Length:</strong></p>
+                                <p><strong>Location:</strong></p>
+                        	</div>
+                        	<div class="floats">
+                                <p>Paul Barrette</p>
+                                <p>Two Hours</p>
+                                <p>UNF's Library</p>
+                          	</div>
+                    	</div><!-- info end -->
+                
+        
+        <form method="post" id="large-form" action="#">
+           		<fieldset class="credit-card">
+                    <h1>Billing Information</h1>
+                     <label for="fname">First Name</label>
+                            <input type="text" id="fname"> 
+                        
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname">
+                          
+                                <label for="email">Email Address:</label>
+                                <input type="text" id="email">
+                             
+                                <label for="address">Address:</label>
+                                <input type="text" id="address">
+                                
+                                <label for="city">City:</label>
+                                
+                                <input type="text" id="city">
+                             
+                                <label for="state">State:</label>
+                                <select id="state" name="state">
+                                  	<option>Alaska</option>
+                                	<option>Alabama</option>
+                                    <option>Florida</option>
+                                    <option>Georgia</option>
+                                    <option>Confusion</option>
+                                    <option>Maryland</option>
+                                    <option>Texas</option>
+                                    <option>Tennessee</option>
+                                    <option>Nebraska</option>
+                                    <option>New York</option>
+                                    <option>Conecticut</option>
+                                    <option>Delaware</option>
+                                    <option>North Dakota</option>
+                                    <option>South Dakota</option>
+                                </select>
+                            
+                                <label for="zip">Zip:</label>
+                                <input type="text" id="zip">
+                     
+                </fieldset>
+                
+                <fieldset class="credit-card">
+                        <h2>Payment Options</h2>
+                    
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" placeholder="First Name"> 
+                       
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" placeholder="Last Name">
+                        
+                                <label for="credit-card">Card Type:</label>
+                                <select id="credit-card" name="credit-card">
+                                  	<option>AMEX</option>
+                                	<option>Visa</option>
+                                    <option>MasterCard</option>
+                                </select>
+                         
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder="0000-000-0000">
+                      
+                            <label for="security">Security Number</label>
+                            <input type="text" id="short" placeholder="&#42;&#42;&#42;&#42;">
+                    
+                                <label for="expiration-date">Expiration Date:</label>
+                                <select id="expiration-date" name="expiration-date">
+                                  	<option>01</option>
+                                	<option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                
+                                <select id="expirations-date" name="expirations-date">
+                                  	<option>2014</option>
+                                	<option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                </select>
+                     <br>
+                                <input class="confirmation" id="submit" type="submit" value="Submit Payment">
+                         </fieldset>
+                         
+                   </form>
+            </section><!--sessions section end-->    
+    	</div>
+      <footer id="footer">
+        
+        <div class="footer-left">
+        	<div class="contact-info">
+                <form action="thank-you.html" method="post" class="smart-green">
+                        <h2>Need to Contact Us? 
+                        </h2>
+                        <label>
+                            
+                            <input id="name" type="text" name="name" placeholder="Your Full Name" />
+                        </label>
+                        
+                        <label>
+                            <input id="email-contact" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                        
+                        <label>
+                            <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+                        </label> 
+                         <label>
+                            <span>&nbsp;</span> 
+                            <input type="button" class="button" value="Send" /> 
+                        </label>    
+                    </form>
+            </div>
+        	
+         </div><!-- footer-left end -->  
+         
+         <div class="footer-right"> 
+         	<ul class="footer-nav">
+            	<li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="index.html#footer">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+            	<a href="#"><svg version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+	 width="36px" height="36px" enable-background="new 0 0 36 36" xml:space="preserve">
+
+<path fill="#004b8d" d="M22.801,14.807H19.53v-2.146c0-0.805,0.533-0.993,0.909-0.993c0.375,0,2.308,0,2.308,0v-3.54l-3.178-0.013
+
+	c-3.528,0-4.331,2.641-4.331,4.33v2.361h-2.039v3.647h2.039c0,4.683,0,10.325,0,10.325h4.292c0,0,0-5.698,0-10.325h2.896
+
+	L22.801,14.807z"/>
+
+</svg></a>
+
+				<a href="#"><svg version="1.1"  id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                
+                     width="36px" height="36px" enable-background="new 0 0 36 36" xml:space="preserve">
+                
+                <path fill="#004b8d" d="M26.083,12.08c-0.807-2.432-3.412-3.683-5.865-2.942c-3.26,0.984-4.609,5.081-4.609,5.081
+                
+                    c-0.585,1.26-1.13,2.563-2.791,3.69c-3.148,2.133-6.419-3.902-4.541,1.823c0.109,0.334,0.269,0.659,0.45,0.977
+                
+                    c-2.108-1.132-2.394-1.242-1.468,1.47c1.085,3.178,4.399,4.614,7.694,4.896c2.93,0,6.215-0.732,7.485-3.645
+                
+                    c0.948-2.175,0.97-5.153,3.332-7.704c0,0,1.412-1.272,3.473-1.501C26.516,14.065,26.083,12.08,26.083,12.08z M22.412,13.555
+                
+                    c-0.716,0-1.296-0.581-1.296-1.297c0-0.715,0.58-1.297,1.296-1.297c0.718,0,1.297,0.582,1.297,1.297
+                
+                    C23.709,12.975,23.13,13.555,22.412,13.555z"/>
+                
+                </svg></a>
+
+				<a href="#"><svg version="1.1"  id="download-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                
+                     width="36px" height="36px" enable-background="new 0 0 36 36" xml:space="preserve">
+                
+                <g>
+                
+                    <path fill="#004b8d" d="M18.072,23.312l2.867-4.966l2.866-4.966h-2.82V8.591c0-0.208-0.168-0.376-0.375-0.376h-5.077
+                
+                        c-0.207,0-0.375,0.168-0.375,0.376v4.789h-2.821l2.867,4.966L18.072,23.312z"/>
+                
+                    <path fill="#004b8d" d="M26.784,18.874h-0.901v5.69H10.322v-5.69H9.216c-0.865,0-1.567,0.701-1.567,1.566v5.778
+                
+                        c0,0.865,0.702,1.566,1.567,1.566h17.568c0.865,0,1.567-0.701,1.567-1.566V20.44C28.352,19.575,27.649,18.874,26.784,18.874z"/>
+                
+                </g>
+                
+                </svg></a>
+
+            </div>   
+          </div><!-- footer-right end -->  
+              <p class="credits">Icon Vectors from <a href="url(http://www.vectoropenstock.com/our-vectors)">Vector Open Stock</a></p> 
+        </footer>
+	</div><!--pagewrapper end-->
+
+	<script>
+		$(document).ready(function () {
+			$('.toresponsive').ReSmenu({
+				menuClass:    'responsive_menu',   // Responsive menu class
+				selectId:     'resmenu',          // select ID
+				textBefore:   false,               // Text to add before the mobile menu
+				selectOption: false,               // First select option
+				activeClass:  'current-menu-item', // Active menu li class
+				maxWidth:     480                  // Size to which the menu is responsive
+			});
+		});
+
+	</script>
+
+</body>
+</html>

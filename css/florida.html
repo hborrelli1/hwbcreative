@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florida</title>
+    <link rel="stylesheet" href="css/hero-nav.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/project-template.css">
+    <script type="text/javascript" src="jq/jquery.js"></script>
+    <script type="text/javascript" src="jq/menu.jquery.js"></script>
+    <script type="text/javascript" src="jq/menu.jquery.js"></script>
+</head>
+
+<body>
+    <header class="main_h">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <nav id="menu-wrap">
+            <ul id="menu">
+                <li>
+                    <a href="index.html#sec01">Projects</a>
+                    <ul>
+                        <li><a href="atmosphere.html">Atmosphere</a></li>
+                        <li><a href="class-five.html">Class Five</a></li>
+                        <li><a href="ventri-watch.html">Ventri-Watch</a></li>
+                        <li><a href="clipless.html">Clipless</a></li>
+                        <li><a href="rhinos.html">Jacksonville Zoo</a></li>
+                        <li><a href="mentorme.html">MentorMe</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#sec02">About Me</a></li>
+                <li><a href="florida.html">Travel Blog</a></li>
+                <li><a href="index.html#sec03">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero clipless-header">
+        <h1><span>Florida</span></h1>
+        <h3>June 9th - 10th</h3>
+    </div>
+    <div class="project-content" id="wrap">
+        <div class="travel-blog-body">
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="florida.html">FL</a></li>
+                    <li><a href="louisiana.html">LA</a></li>
+                    <li><a href="texas.html">TX</a></li>
+                    <li>NM</li>
+                    <li>AZ</li>
+                    <li>CA</li>
+                    <li>HI</li>
+                    <li>OR</li>
+                    <li>WA</li>
+                    <li>VBC</li>
+                    <li>UT</li>
+                    <li>CO</li>
+                </ul>
+            </div>
+            <div class="project-intro">
+                <div class="blog-intro">
+                    <h2 id="Florida">Florida</h2>
+                    <h3>Let the roadtrip adventure begin!!</h3>
+                    <p>For years I have dreamt about take a roadtrip around the country to adventure, explore, and look for a the perfect place to live. After saving up for a year (thanks Mom and Dad for letting me stay rent free!), it was finally time to start my cross-country roadtrip adventure. As of now, I have about 4 months of travel planned out. My general route will be:</p>
+                    <p><strong>FL  >  LA  >  TX  >  NM  >  AZ  >  CA  >  HI  >  OR  >  WA  >  VBC  >  UT  >  CO.</strong></p>
+                    <p>After that its up to fate!</p>
+                </div>
+                <!-- project-description end -->
+            </div>
+            <div class="city">
+                <h4>First stop; Tallahhasse</h4>
+                <p>With plans to start my trip on June 10th, I received a phone call from a good friend on June 9th, to see if I wanted to go Deep Sea Fishing on Friday the 10th. Stoked with the new plans, I rushed to pack up my gear into my car and left that night to Tallahassee. We woke up early and spent almost 12 hours out on the water. It was a beautiful flat day on the ocean. We caught a few Groupers and spanish mackerals along with a couple black seabass. It was a great day, and and even better jumpstart to my travels!</p>
+                <p>The next day I met a good fiend for breakfast and then begin my drive to New Orleans!</p>
+                <p><strong>See ya' later Florida!</strong></p>
+                <div class="city-gallery">
+                    <img src="/img/fishing.jpg" alt="Grouper">
+                </div>
+            </div>
+        </div>
+        <!-- Travel Blog Body End -->
+    </div>
+    <div class="next-destination">
+        <div class="grid">
+            <a href="#">Next Destination >> </a>
+        </div>
+    </div>
+    <!-- project-content end  -->
+    <script>
+    // Sticky Header
+    $(window).scroll(function() {
+
+        if ($(window)) {
+            $('.main_h').addClass('sticky');
+        } else {
+            $('.main_h').removeClass('sticky');
+        }
+    });
+
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.main_h').removeClass('open-nav');
+        } else {
+            $('.main_h').addClass('open-nav');
+        }
+    });
+
+    $('.main_h li a').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.navigation').removeClass('open-nav');
+            $('.main_h').removeClass('open-nav');
+        }
+    });
+
+    // Navigation Scroll - ljepo radi materem
+    $('nav a').click(function(event) {
+        var id = $(this).attr("href");
+        var offset = 70;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({
+            scrollTop: target
+        }, 500);
+        event.preventDefault();
+    });
+    </script>
+    <script>
+    (function() {
+        /* Mobile */
+        $('#menu-wrap').prepend('<div id="menu-trigger"></div>');
+        $("#menu-trigger").on("click", function() {
+            $("#menu").slideToggle();
+        });
+
+        // iPad
+        var isiPad = navigator.userAgent.match(/iPad/i) != null;
+        if (isiPad) $('#menu ul').addClass('no-transition');
+    })();
+    </script>
+</body>
+
+</html>

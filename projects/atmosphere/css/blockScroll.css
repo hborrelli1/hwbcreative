@@ -1,0 +1,17 @@
+#main-wrap>div
+{
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+#block-up-arrow, #block-down-arrow {
+  cursor: pointer;
+}
+
+.home-block {
+	background: url(../img/header-background.png) no-repeat; 
+	background-size: cover;
+	position: fixed;
+	width: auto;	
+}

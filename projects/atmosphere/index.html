@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Atmosphere</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+	<link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+
+	
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#000', '#7c7c7c', '#6caaaf', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1700,
+				slidesNavigation: true,
+				scrollOverflow: true
+			});
+
+		});
+	</script>
+    
+        
+	<script src="js/lightGallery.js"></script>
+    
+    <script type="text/javascript">
+	  $(document).ready(function() {
+		$(".lightGallery-thumb").lightGallery(); 
+	  });
+	</script>
+    
+  
+    
+    
+   
+
+
+</head>
+<body>
+
+
+
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">The Gear</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Dynamic Duo</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+</ul>
+
+
+
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		
+        
+        <div class="social-icons">
+        	<ul class="icons">
+            	<li class="facebook-icon"><a href="http://www.facebook.com">Facebook</a></li>
+                <li class="twitter-icon"><a href="http://www.twitter.com">Twitter</a></li>
+                <li class="instagram-icon"><a href="http://www.instagram.com">Instagram</a></li>
+            </ul>
+        </div>
+        
+        <header>
+            <a href="#secondPage"><h1>Atmosphere</h1>
+            <p>Mineapolis Based Hip Hop Group</p></a>
+		</header>
+        
+        <div class="navigation-icons">
+           	<img src="img/navigation-options.png" alt="Navigation Options">    
+        </div>
+        
+	</div>
+	<div class="section" id="section1">
+    	<div class="slide" id="slide-insight">
+            <div class="intro">
+                    <article>
+                        <h1 class="center">Imperfect Insight</h1>
+                        <p>Atmosphere releases a 25th year anniversary album. This album features Ant and Slug&rsquo;s favorite tracks!</p>                        
+                        <div class="album-teaser">	
+                           <h1><a class="anchor" href="#secondPage/1">purchase album</a></h1>
+                        </div>	
+                        <!-- albume teaser end -->
+     
+                    </article>
+                    
+                    <article>
+                        <h2><img class="teaser" src="img/final-album-cover.png" alt="example"/></h2>
+                    </article>
+            </div><!-- intro end -->
+         </div><!-- slide-shop end -->
+         
+         <div class="slide" id="slide-shop">
+            <div class="intro">
+            	<div class="merchandise">
+                	<h3><strong>The Gear...</strong></h3>
+                </div>
+                
+            <div class="merch-wrap">
+                
+                <div class="thumb">
+                       <ul class="lightGallery-thumb">
+                          <li data-src="img/album-cover.png">
+                            <img src="img/album-cover.png" alt="Imperfect Insight Album Cover">
+                          </li>
+                        </ul>
+                        <div class="panel">
+                            <h5>Imperfect Insight</h5>
+                            <h6 class="subheader">$15.00</h6>
+                          	<a class="purchase-button" href="#purchase-merchandise">Purchase</a>  
+                          </div>
+                        
+                	</div>
+                    <div class="thumb">
+                       <ul class="lightGallery-thumb">
+                          <li data-src="img/album-package.jpg">
+                            <img src="img/album-package.jpg" alt="Imperfect Insight Album Package">
+                          </li>
+                        </ul>
+                        <div class="panel">
+                            <h5>Album Package</h5>
+                            <h6 class="subheader">$35.00</h6>
+                            <a class="purchase-button" href="#purchase-merchandise">Purchase</a>
+                          </div>
+                        
+                	</div>
+            	<div class="thumb">
+                    <ul class="lightGallery-thumb">
+                      <li data-src="img/t-shirt-dgray-front.png">
+                        <img src="img/t-shirt-dgray-front.png" alt="Dark Gray Shirt">
+                      <li data-src="img/t-shirt-dgray-back.png">
+                      </li>
+                    </ul>
+                    <div class="panel">
+                        <h5 >T-Shirt Gray</h5>
+                        <h6 class="subheader">$25.00</h6>
+                        <a class="purchase-button" href="#purchase-merchandise">purchase</a>
+                      </div>
+                    
+                    
+               </div>
+                
+                	<div class="thumb">
+                        <ul class="lightGallery-thumb">
+                          <li data-src="img/t-shirt-orange-front.png">
+                            <img src="img/t-shirt-orange-front.png" alt="Orange Shirt">
+                            </li>
+                          <li data-src="img/t-shirt-orange-back.png">
+                          </li>
+                       </ul>
+                       <div class="panel">
+                            <h5>T-Shirt Orange</h5>
+                            <h6 class="subheader">$25.00</h6>
+                            <a class="purchase-button" href="#purchase-merchandise">Purchase</a>
+                          </div>
+                       
+               		</div>
+                    <div class="thumb">
+                       <ul class="lightGallery-thumb">
+                          <li data-src="img/beanie-anchor.png">
+                            <img src="img/beanie-anchor.png" alt="Anchor Beanie">
+                          </li>
+                        </ul>
+                        <div class="panel">
+                            <h5>Anchor Beanie</h5>
+                            <h6 class="subheader">$20.00</h6>
+                            <a class="purchase-button" href="#purchase-merchandise">Purchase</a>
+                          </div>
+                        
+                	</div>
+                    <div class="thumb">
+                        <ul class="lightGallery-thumb">
+                          <li data-src="img/beanie-helm.png">
+                            <img src="img/beanie-helm.png" alt="Helm Beanie">
+                          </li>
+                        </ul>
+                        <div class="panel">
+                            <h5>Helm Beanie</h5>
+                            <h6 class="subheader">$20.00</h6>
+                            <a class="purchase-button" href="#purchase-merchandise">Purchase</a>
+                          </div>
+                        
+                	</div>
+                    <div class="thumb">
+                        <ul class="lightGallery-thumb">
+                          <li data-src="img/t-shirt-rope.png">
+                            <img src="img/t-shirt-rope.png" alt="Rope Shirt">
+                          </li>
+                        </ul>
+                        <div class="panel">
+                            <h5>Rope T-Shirt</h5>
+                            <h6 class="subheader">$25.00</h6>
+                            <a class="purchase-button" href="#purchase-merchandise">Purchase</a>
+                          </div>
+                        
+                	</div>
+                    <div class="thumb">
+                        <ul class="lightGallery-thumb">
+                          <li data-src="img/poster.png">
+                            <img src="img/poster.png" alt="Album Poster">
+                          </li>
+                        </ul>
+                         <div class="panel">
+                            <h5>Poster</h5>
+                            <h6 class="subheader">$15.00</h6>
+                            <a class="purchase-button" href="#purchase-merchandise">Purchase</a>
+                          </div>
+                        
+                     </div>
+                 </div><!-- merch-wrap end-->
+
+            </div><!-- intro end -->
+         </div><!-- slide-shop end -->
+         
+         
+         
+         <div class="slide" id="purchase-merchandise">
+            <div class="intro">
+            	
+                     
+                 
+           
+            <article class="item-info">
+            <h2>Your Items:</h2>
+            	
+                	
+        <div class="list-item">
+                <div class="purchase-thumb">
+                    <ul class="lightGallery-thumb">
+                          <li data-src="img/t-shirt-orange-front.png">
+                            <img src="img/t-shirt-orange-front.png" alt="Orange T-Shirt">
+                          </li>
+                          <li data-src="img/t-shirt-orange-back.png">
+                          </li>
+                    </ul>
+             	</div> <!-- purchase-thumb end -->    
+                
+            <form method="post" id="payments" action="thank-you.html">
+            	<fieldset class="item-list">
+            <p class="indent"><input class="quantity" type="text" name="quantity" placeholder="1">Atmosphere T-Shirt (orange) <h6 class="subheader">$25.00</h6> | <a href="#">remove</a><p> 
+                <ul class="form">	
+                    <li class="form">  
+                            <label>Size:</label>
+                            <br>
+                            <select id="shirt-size" name="shirt-size">
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>X-Large</option>
+                            </select>
+               	             
+                         </li>
+                    </ul>
+               </fieldset>
+           </div> <!-- list-item end --> 
+           
+          <div class="list-item">
+             <div class="purchase-thumb">
+                        <ul class="lightGallery-thumb">
+                          <li data-src="img/beanie-helm.png">
+                            <img src="img/beanie-helm.png" alt="Gray T-Shirt">
+                          </li>
+                        </ul>
+                     </div> <!-- purchase-thumb end -->
+             
+              
+           		<fieldset class="item-list">
+            <p class="indent"><input class="quantity" type="text" name="quantity" placeholder="1">Atmosphere Helm Beanie (blue) <h6 class="subheader">$20.00</h6> | <a href="#">remove</a><p> 
+                <ul class="form">	
+                    <li class="form">  
+                            <label>Size:</label>
+                            <br>
+                            <select id="beanie-size" name="shirt-size">
+                                <option>One size fits all</option>
+                            </select>
+               	             
+                     </li>
+                </ul>
+           </fieldset>
+        </div> <!-- list-item end -->   
+           
+           
+        </form>
+                     <p class="paypal">**Purchases will be made via <a href="https://www.paypal.com/">PayPal</a>**</p>
+                     
+           <form method="post" id="purhcasing-info" action="https://www.paypal.com/">
+            <fieldset class="name-email">
+                 <ul class="form">
+                    <li class="form">
+                        <label for="fname" >First and Last Name</label>
+                        <br>
+                        <input type="text" id="fname" placeholder="Lucy Ford"> 
+                    </li>
+                    
+                    <li class="form">    
+                            <label for="email">Email Address:</label>
+                            <br>
+                            <input type="text" id="email" placeholder="godlovesugly@gmail.com">
+                        </li> 
+                 </ul>
+            </fieldset>
+            
+            
+                        <input class="confirmation" type="submit" value="Continue to PayPal">
+                	
+                    </form>
+            </article>
+            
+            
+            </div><!-- intro end -->
+         </div><!-- slide-shop end -->
+         
+     </div><!-- section end -->
+	
+    <div class="section" id="section2">
+		<div class="slide" id="slide1">
+			<img class="slug-ant" src="img/slug-ant-cutout.png" alt="Slug and Ant">
+            <div class="lyrics">
+            	<p>&ldquo;I make you smile for the simple fact im good at it, Ill make you smile just so I can sit and look at it&rdquo;</p>
+            </div>
+            <div class="intro">
+				<h1>Dynamic Duo</h1>
+				<p>Atmosphere is a Minneapolis based hip hop group consisting of Sean Daley (Slug) and Anthony Davis (Ant). The duo has been giving indie rap a new meaning since its formation in 1989.</p>
+			</div>
+
+		</div>
+	    <div class="slide" id="slide2">
+			<div class="intro">
+				
+				<h1>Slug</h1>
+				<p>Minneapolis is known for many things — pretty lakes, the Mall of America, lutefisk. But 17 years ago, hip-hop act Atmosphere transformed the city into something else entirely: a nexus from which underground rap spiraled-out to the masses. And thanks to the duo’s indefatigable touring habits, Top 20-charting albums, and their galvanizing artist-owned label <strong><a class="orange-link" href="http://www.rhymesayers.com">RHYMESAYERS</a></strong> (MF Doom, Aesop Rock), they’re still pushing the boundaries of what indie rap can mean. </p>
+			</div>
+		</div>
+	    <div class="slide" id="slide3">
+			<div class="intro">
+			
+				<h1>Ant</h1>
+				<p>Ant started to become interested in DJing at a very young age. He would watch his father DJ in the army while he would picture himself as Grandmaster Flash. Years later he would start to use producing and DJing as much more than a hobby. While producing that album, he met Sean Daley (Slug) and they later worked together. With one exception (Lucy Ford: The Atmosphere EPs), Ant has produced every Atmosphere album in full. He also works with various artists that are a part of Rhymesayers Entertainment (including full production of three <strong><a class="orange-link" href="http://www.rhymesayers.com/brotherali">BROTHER ALI</a></strong> albums) and many more. </p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+    	<div class="social-icons">
+        	<ul class="icons">
+            	<li class="facebook-icon"><a href="http://www.facebook.com">Facebook</a></li>
+                <li class="twitter-icon"><a href="http://www.twitter.com">Twitter</a></li>
+                <li class="instagram-icon"><a href="http://www.instagram.com">Instagram</a></li>
+            </ul>
+        </div>
+		<div class="intro">
+        <h1 class="contact">Contact Us</h1>
+			<form method="post" id="contact" action="thank-you.html">
+           		<fieldset class="contact">
+                    
+                     <ul class="form">
+                        <li class="form">
+                            <label for="fname">Name:</label>
+                            <br>
+                            <input type="text" id="name"> 
+                        </li>
+                        <li class="form">
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="text" id="email-address">
+                        </li>
+                        <li class="form">
+                            <label for="subject">subject:</label>
+                            <br>
+                            <input type="text" id="subject">
+                        </li>
+                        <li class="form">
+                        	<label>Comments:</label>
+                            <br>
+            				<textarea placeholder="Type here..." maxlength="100">
+                			</textarea>
+                        </li>
+                         </ul>
+                     <input class="contact" type="submit" value="Submit Message">    
+             </fieldset>
+             
+             
+       </form>
+	</div>
+    <footer>
+    	<p>All photos from <a href="http://creativecommons.org">Creative Commons</a></p>
+        <p>All content from <a href="http://rhymesayers.com/atmosphere">Rhymesayers</a></p>
+        <p>This website was coded by Harry Borrelli for class project</p>
+    </footer>
+</div><!-- section3 end -->
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

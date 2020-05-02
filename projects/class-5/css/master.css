@@ -1,0 +1,431 @@
+
+body {
+	background: url(../img/white_wave.png);	
+}
+
+.row {
+	background-color: #fff;	
+}
+
+.top-bar {
+	background: #67b28a;
+	height: auto;
+}
+
+
+
+.social-icons  {
+	width: 20%;	
+}
+
+.icon {
+	width: 20%;
+	float: left;	
+	padding: 0 2%;
+	margin-left: 5%;
+}
+
+#menu {
+	float: right;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 800px) {
+	/* #menu is the original menu */
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+
+
+
+#slider {
+	position: relative;
+	
+}
+
+.top-bar .name {
+	height: 3.5rem;	
+}
+
+.top-bar-section ul li {
+	background: #67b28a;	
+
+	
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: #67b28a;
+}
+
+
+.top-bar-section ul li > a.button {
+	background-color: #333333;	
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	line-height: 3.5rem;	
+}
+
+.top-bar .name h1 a{
+	color: 	#67b28a;
+}
+
+
+
+.large-8  {
+	width: 100%;
+}
+
+
+.large-9 {
+	padding-top: 6%;
+}
+
+.panel h5 {
+	color: 	#67b28a;
+}
+
+#descriptor {
+	width: 45%;
+	float: left;
+	min-width: 300px;
+	margin-top: 1.125rem;
+	padding-left: 1.875rem;
+}
+
+#descriptor h4 {
+	color: #67b28a;	
+}
+
+#white-water-experience {
+	background-color: #fff;	
+	width: 45%;	
+	border: none;
+	float: left;
+}
+
+a {
+	color: #2c93af;	
+}
+
+.top-bar-section li a.selected {
+	color: #333333;	
+}
+
+
+#thumbnails a {
+	color: #67b28a;	
+}
+
+#thumbnails a:hover {
+	color: #0d4f50;	
+}
+
+.left li {
+	border-right: 1px solid #fff;	
+}
+
+#site-title a {
+	width: 300px;
+	height: 150px;
+	background: url(../img/web-logo.png) no-repeat;
+	display: inline-block;
+		text-indent: -9999px;
+		white-space: nowrap;
+		overflow: hidden;
+		
+}
+
+.top-bar-section .right {
+	padding-top: .25rem;
+}
+
+.large-3 h1 {
+	width: 300px;
+	height: 115px;				
+}
+
+
+.button {
+	background-color: #298789;	
+	margin-bottom: 0;
+}
+
+.button:hover {
+	color: #333333;	
+}
+
+
+
+
+
+
+.center.row {
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	max-width: 500px;
+}
+
+.signup-panel {
+	padding: 10px;
+}
+
+
+.signup-panel i {
+  font-size: 30px;
+  line-height: 50px;
+  color: #999;
+}
+
+.signup-panel form input, .signup-panel form span {
+	height: 30px;
+}
+
+.row .collapse {
+	padding-left: 3rem;
+}
+
+
+
+.signup-panel .welcome {
+  font-size: 26px;
+  color: #FFF;
+  text-align: center;
+  margin-left: 0;
+}
+
+.signup-panel .button {
+  margin-left: 35%;
+}
+
+.mailer {
+	width: 45%;
+	min-width: 300px;
+	float: right;
+	padding-right: 3rem;
+}
+
+.mailer .content .row {
+	background-color: #67b28a;	
+	border-radius: 10px;	
+}
+
+section.active {
+	padding-top: 75px !important;
+}
+
+p.title {
+	border-bottom: 1px solid #cccccc !important;
+}
+
+.title a {
+	color: #67b28a;	
+}
+
+#beginner, #advanced, #extreme, #camping, #cabins {
+	width: 100%;
+	margin: 1.5rem 0;
+		
+}
+
+#trips {
+	background-color: #67b28a;	
+}
+
+.text {
+	width: 100%;	
+	float: left;
+}
+
+.text h4 {
+	color: #fff;
+}
+
+.info {
+	width: 75%;	
+	float: left;
+}
+
+.info p {
+	font-size: .875em;	
+}
+
+.info a {
+	color: #FF0;
+}
+
+.info a:hover {
+	color: #FFF;	
+}
+
+p.booking, p.accomodations {
+	padding-top: 1rem;	
+}
+
+#contact {
+	padding-top: 0;	
+}
+
+h3.get-in-touch {
+	color: #67b28a;	
+}
+
+
+
+
+
+
+
+
+
+.full-width {
+  max-width: 1400px;
+}
+
+#footer-area {
+	background-color: #67b28a;	
+}
+
+.footer {
+  background-color: #67b28a;	
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #fff;
+}
+.footer i {
+  font-size: 100px;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 10px;
+}
+.footer p, .footer a {
+  font-weight: 300;
+  font-size: .8em;
+  color: #fff;
+}
+
+.footer .footer-links  {
+	margin: 0;
+		
+}
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 625px) {
+	#descriptor, .mailer {
+		float: none;
+		width: 75%;
+		text-align: center;
+		margin: 0 auto;	
+		padding: 0;
+	}
+	
+	#thumbnails {
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+			
+	}
+	
+	.social-icons {
+	width: 40%;
+	margin: 0 auto;	
+}
+	
+	.signup-panel .button {
+		margin-left: 0;	
+	}
+	 
+	 
+	.mailer {
+		padding-right: 0;			
+	}
+	
+	
+	
+	
+ }
+
+
+	<!--641 px-->
+@media only screen and (min-width: 40.063em)  {
+  .footer .columns:nth-child(n+2) {
+    border-left: 1px solid #b3b3b3;
+    min-height: 280px;
+  }
+}
+
+.footer-links {
+  list-style-type: none;
+}
+.footer-links li {
+  margin-top: .5em;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+	
+		#beginner, #advanced, #extreme, #cabins, #camping {
+	width: 100%;
+	text-align: center;
+	float: none;	
+	}
+	
+	.text {
+	width: 100%;	
+	float: none;
+	}
+	
+	.text h4 {
+		padding-left: 1.5rem;	
+		color: #fff;
+	}
+	
+	.info {
+		width: 100%;	
+		float: none;
+	}
+	
+	
+		
+	
+	
+}
+
+
+
+
+
+@media only screen and (min-width: 1025px) {
+
+.text {
+	padding-top: 10rem;	
+}
+
+	
+}
+

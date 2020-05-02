@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servant Coffee</title>
+  <link rel="stylesheet" href="css/hero-nav.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/project-template.css">
+  <script type="text/javascript" src="jq/jquery.js"></script>
+  <script type="text/javascript" src="jq/menu.jquery.js"></script>
+</head>
+
+<body class="no-img">
+  <header class="main_h">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    <nav id="menu-wrap">
+      <ul id="menu">
+        <li>
+          <a href="index.html#sec01">Projects</a>
+          <ul>
+            <li><a href="./index.html#development">Dev Projects</a></li>
+            <li><a href="./index.html#design">Design Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#sec02">About Me</a></li>
+        <li><a href="index.html#sec04">Travel Blog</a></li>
+        <li><a href="index.html#sec03">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero proteus-header">
+    <h1><span>Servant Coffee</span></h1>
+    <h3>Subscription Coffee // WordPress // BigCommerce</h3>
+  </div>
+  <div class="project-content bottom-padding" id="wrap">
+    <div class="project-intro">
+      <div class="project-description">
+        <h2>Servant Coffee</h2>
+        <h3>WordPress // BigCommerce</h3>
+        <p>A custom eCommerce solution for a subscription based coffee service. This site uses WordPress as a CMS with an integration to BigCommerce to manage all subscriptions and eCommerce functionality. The site design was produced by the awesome
+          team at <a class="green-link" href="http://www.flowstatemarketing.com/" target="_blank">FlowState Marketing</a>.</p>
+
+        <!-- button-block end -->
+        <div class="button-block">
+          <a class="button" href="http://servantcoffee.com" target="_blank"><span id="visit-website">Visit Website</span></a>
+        </div>
+        <!-- button-block end -->
+
+      </div>
+      <!-- project-description end -->
+
+      <div class="intro-img">
+        <figure>
+          <img class="album" src="./img/Servant-coffee-home-mockup.png" alt="responsive mockup">
+          <figcaption>Servant Coffee Website</figcaption>
+        </figure>
+      </div>
+      <!-- intro-img end -->
+    </div>
+    <!-- div project-intro end -->
+
+  </div>
+  <!-- project-content end  -->
+  <script>
+    // Sticky Header
+    $(window).scroll(function() {
+
+      if ($(window)) {
+        $('.main_h').addClass('sticky');
+      } else {
+        $('.main_h').removeClass('sticky');
+      }
+    });
+
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+      } else {
+        $('.main_h').addClass('open-nav');
+      }
+    });
+
+    $('.main_h li a').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+      }
+    });
+
+    // Navigation Scroll - ljepo radi materem
+    $('nav a').click(function(event) {
+      var id = $(this).attr("href");
+      var offset = 70;
+      var target = $(id).offset().top - offset;
+      $('html, body').animate({
+        scrollTop: target
+      }, 500);
+      event.preventDefault();
+    });
+  </script>
+  <script>
+    (function() {
+      /* Mobile */
+      $('#menu-wrap').prepend('<div id="menu-trigger"></div>');
+      $("#menu-trigger").on("click", function() {
+        $("#menu").slideToggle();
+      });
+
+      // iPad
+      var isiPad = navigator.userAgent.match(/iPad/i) != null;
+      if (isiPad) $('#menu ul').addClass('no-transition');
+    })();
+  </script>
+</body>
+
+</html>

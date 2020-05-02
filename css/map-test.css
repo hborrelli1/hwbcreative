@@ -1,0 +1,35 @@
+.header-logo {
+	padding-top:5vh;
+}
+#map-function-test {
+  display: block;
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*svg #states rect:hover {
+	fill:#000;
+}*/
+svg #blog-post .blog-1:hover circle:last-of-type,
+svg #blog-post .blog-2:hover circle:last-of-type,
+svg #blog-post .blog-3:hover circle:last-of-type,
+svg #blog-post .blog-4:hover circle:last-of-type,
+svg #blog-post .blog-5:hover circle:last-of-type {
+	fill:#000;
+	stroke:#000;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  color:#333;
+  background-color: #8f8f8f;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}

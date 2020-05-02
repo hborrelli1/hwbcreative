@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripography</title>
+    <link rel="stylesheet" href="css/hero-nav.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/project-template.css">
+    <script type="text/javascript" src="jq/jquery.js"></script>
+    <script type="text/javascript" src="jq/menu.jquery.js"></script>
+</head>
+
+<body class="no-img">
+    <header class="main_h">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <nav id="menu-wrap">
+          <ul id="menu">
+            <li>
+              <a href="index.html#sec01">Projects</a>
+              <ul>
+                <li><a href="./index.html#development">Dev Projects</a></li>
+                <li><a href="./index.html#design">Design Projects</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#sec02">About Me</a></li>
+            <li><a href="index.html#sec04">Travel Blog</a></li>
+            <li><a href="index.html#sec03">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="hero proteus-header">
+        <h1><span>Tripography</span></h1>
+        <h3>Travel Booking Application</h3>
+    </div>
+    <div class="project-content" id="wrap">
+        <div class="project-intro">
+            <div class="project-description">
+                <h2>Tripography</h2>
+                <h3>JavaScript // Webpack // Mocha & Chai</h3>
+                <p>Tripography is a solo project I worked on while I was enrolled in Turing School of Software & Design. The goal of this project was to create a trip planning application that supports both a customer and a travel agent login. Customers can request trips, and the travel agent can appove/deny or edit trip requests.</p>
+
+                <p>Learning goals for this project include:
+                  <ul>
+                    <li>Use OOP to drive the design of the application.</li>
+                    <li>Working with an API to send and receive data.</li>
+                    <li>Solidify code review process.</li>
+                    <li>Create a robust test suite that thoroughly tests all
+                    functionality of a client-side application.</li>
+                  </ul>
+                </p>
+
+                <!-- button-block end -->
+                <div class="button-block">
+                    <a class="button" href="https://github.com/hborrelli1/tripography-1911" target="_blank"><span id="visit-website">View Code</span></a>
+                    <a class="button" href="https://hborrelli1.github.io/tripography-1911/" target="_blank"><span id="visit-website">View App</span></a>
+                </div>
+                <p class="note">If you want to checkout the app in action, you can use these logins:
+                  <span>Traveler - Username: traveler40</span>
+                  <span>Agent - Username: agency</span>
+                  <span>Password: travel2020</span>
+                </p>
+                <!-- button-block end -->
+
+            </div>
+            <!-- project-description end -->
+
+            <div class="intro-img">
+                <figure>
+                    <img class="album" src="./img/Tripography-browser.jpg" alt="responsive mockup">
+                    <figcaption>Tripography App</figcaption>
+                </figure>
+            </div>
+            <!-- intro-img end -->
+        </div>
+        <!-- div project-intro end -->
+
+        <div class="display-section">
+            <div class="text-left">
+                <h4>Popup Modal</h4>
+                <p>One of the features I'm extra proud of is the trip request popup modal. I've struggled creating custom modals in the past. This one came together really well. It even looks decent on mobile!</p>
+                <figure>
+                    <img src="./img/tripography-modal-form.png" alt="Website Sketches">
+                    <img src="./img/tripography-modal-confirmation.png" alt="Website Sketches">
+                    <figcaption>Tripography Request Trip Modal</figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- display-sections end -->
+    </div>
+    <!-- project-content end  -->
+    <script>
+    // Sticky Header
+    $(window).scroll(function() {
+
+        if ($(window)) {
+            $('.main_h').addClass('sticky');
+        } else {
+            $('.main_h').removeClass('sticky');
+        }
+    });
+
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.main_h').removeClass('open-nav');
+        } else {
+            $('.main_h').addClass('open-nav');
+        }
+    });
+
+    $('.main_h li a').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.navigation').removeClass('open-nav');
+            $('.main_h').removeClass('open-nav');
+        }
+    });
+
+    // Navigation Scroll - ljepo radi materem
+    $('nav a').click(function(event) {
+        var id = $(this).attr("href");
+        var offset = 70;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({
+            scrollTop: target
+        }, 500);
+        event.preventDefault();
+    });
+    </script>
+    <script>
+    (function() {
+        /* Mobile */
+        $('#menu-wrap').prepend('<div id="menu-trigger"></div>');
+        $("#menu-trigger").on("click", function() {
+            $("#menu").slideToggle();
+        });
+
+        // iPad
+        var isiPad = navigator.userAgent.match(/iPad/i) != null;
+        if (isiPad) $('#menu ul').addClass('no-transition');
+    })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,721 @@
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserratbold/Montserrat-Bold-webfont.eot');
+    src: url('../fonts/montserratbold/Montserrat-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserratbold/Montserrat-Bold-webfont.woff') format('woff'), url('../fonts/montserratbold/Montserrat-Bold-webfont.ttf') format('truetype'), url('Montserrat-Bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrathairline';
+    src: url('../fonts/montserrathairline/Montserrat-Hairline-webfont.eot');
+    src: url('../fonts/montserrathairline/Montserrat-Hairline-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrathairline/Montserrat-Hairline-webfont.woff2') format('woff2'), url('../fonts/montserrathairline/Montserrat-Hairline-webfont.woff') format('woff'), url('../fonts/montserrathairline/Montserrat-Hairline-webfont.ttf') format('truetype'), url('../fonts/montserrathairline/Montserrat-Hairline-webfont.svg#montserrathairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserratlight/Montserrat-Light-webfont.eot');
+    src: url('../fonts/montserratlight/Montserrat-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserratlight/Montserrat-Light-webfont.woff2') format('woff2'), url('../fonts/montserratlight/Montserrat-Light-webfont.woff') format('woff'), url('../fonts/montserratlight/Montserrat-Light-webfont.ttf') format('truetype'), url('../fonts/montserratlight/Montserrat-Light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserratregular/Montserrat-Regular-webfont.eot');
+    src: url('../fonts/montserratregular/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserratregular/Montserrat-Regular-webfont.woff2') format('woff2'), url('../fonts/montserratregular/Montserrat-Regular-webfont.woff') format('woff'), url('../fonts/montserratregular/Montserrat-Regular-webfont.ttf') format('truetype'), url('../fonts/montserratregular/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ============================================================
+	# Global CSS
+============================================================ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+
+.first-nav {
+    top: 0px;
+    opacity: 1;
+}
+
+.logo-hidden {
+    display: none;
+}
+
+header .logo {
+    width: 75px;
+    float: left;
+    padding: 10px 0 0 20px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+#content-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main-logo {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #529886;
+    padding-bottom: 10px;
+}
+
+#main-logo img {
+    width: 25%;
+    padding-right: 75%;
+}
+
+#tagline {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+    text-align: left;
+}
+
+
+/* ============================================================
+	# Homepage CSS
+============================================================ */
+
+.hero h1 {
+    margin-bottom: 0px;
+}
+
+.hero h3 {
+    font-size: .8em;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.gallery li {
+    /*max-width: 680px;*/
+    max-height: 395px;
+}
+
+p {
+    font-family: 'montserratregular', Helvetica, sans-serif;
+    color: #7f8c8d;
+    line-height: 1.875;
+}
+
+.header-logo {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 400px;
+    padding-top: 60vh;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 460px;
+    background: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#lowercase {
+    text-transform: none;
+}
+
+.main_h {
+    padding: 0;
+    overflow: visible;
+}
+
+#menu {
+    float: right;
+    margin: 20px 10px 0 0;
+    border-radius: 4px;
+}
+
+
+/* ============================================================
+	# Project Pages CSS
+============================================================ */
+
+.proj-nav-arrows {
+    width: 45px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #529886;
+    margin: 0 0 10px 10px;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.proj-nav-arrows a {
+    width: 25px;
+    height: 30px;
+    padding: 10px;
+}
+
+.proj-nav-arrows svg:hover {
+    color: #3d7869;
+}
+
+#rotate {
+    transform: rotate(180deg);
+}
+
+.proj-nav-arrows svg {
+    width: 50%;
+}
+
+.kicker {
+    color: #666;
+}
+
+header h1 {
+    color: #000;
+    margin: 0 auto;
+}
+
+h1#sec01,
+h1#sec02,
+h1#sec03 {
+    font-family: 'montserratbold', Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #529886;
+    display: block;
+    width: 87%;
+    margin: 0;
+    margin-top: 50px;
+    padding-top: 75px;
+    text-transform: lowercase;
+}
+
+h3 {
+    font-family: 'montserratregular', Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: 'montserratregular', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: .75em;
+    text-transform: lowercase;
+    color: #529886;
+}
+
+.chat {
+    width: 50%;
+    padding: 0;
+}
+
+.chat-button {
+    width: 100px;
+    height: 25px;
+    background-color: #529886;
+    padding: 10px 35px;
+    border-radius: 4px;
+    font-size: .75em;
+    color: #fff;
+}
+
+.chat-button:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+    -webkit-transition: all 0.4s;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 75px;
+}
+
+.section-about {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1#sec02,
+h1#sec03 {
+    margin: 0;
+    margin-top: 50px;
+}
+
+.left {
+    text-align: left;
+    width: 45%;
+    float: left;
+    display: inline-block;
+    margin-right: 5%;
+    font-weight: normal;
+}
+
+.me {
+    width: 50%;
+    float: left;
+    margin-bottom: 75px;
+}
+
+.contact-info,
+.hire-me {
+    width: 47.5%;
+    height: 450px;
+    text-align: left;
+    float: left;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #ccc;
+    padding: 50px 0 0 0;
+    border-top: #529886 1px solid;
+    border-bottom: #529886 1px solid;
+}
+
+.contact-info p {
+    font-size: .75em;
+    line-height: 1.125;
+    padding-top: 30px;
+    font-family: 'montserratlight', Helvetica, sans-serif
+}
+
+.hire-me {
+    float: right;
+    clear: right;
+    border-bottom: #529886 1px solid;
+}
+
+.hire-me h4 {
+    width: 75%;
+    font-weight: normal;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.contact-info ul li {
+    font-size: 1.125em;
+    line-height: 1.5;
+}
+
+.contact-content {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.social-icons {
+    width: 100%;
+    float: left;
+    clear: left;
+    padding: 100px 0 0 0;
+    margin: 50px 0 0 0;
+    border-top: #529886 1px solid;
+}
+
+.social-icons h4 {
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+.social-icons ul {
+    width: 100%;
+}
+
+.social-icons ul li {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+#icons,
+#icons1,
+#icons2,
+#icons3,
+#icons4,
+{
+    transition: .5s;
+}
+
+svg:hover #icons {
+    fill: #529886;
+    transition: 1s;
+}
+
+#submit {
+    display: block;
+    clear: both;
+    border-radius: 4px;
+    background-color: #529886;
+}
+
+#submit:hover {
+    background-color: #3d7869;
+    transition: all 0.5s;
+}
+
+#last {
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+#last::-webkit-input-placeholder {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+a.thank-you {
+    display: block;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.65);
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.back:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.label_better:nth-of-type(2n) {
+    float: right;
+}
+
+.bl_form {
+    margin: 25px 0;
+}
+
+.bl_form input,
+.bl_form textarea {
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.lb_wrap {
+    float: left;
+    clear: both;
+    margin-top: 50px;
+}
+
+.lb_wrap .lb_label.top,
+.lb_wrap .lb_label.bottom {
+    left: 15px !important;
+    bottom: 20px;
+    color: #ccc;
+    font-size: .75em;
+}
+
+.lb_wrap .lb_label.left {
+    left: 0;
+}
+
+.lb_label {
+    font-weight: bold;
+    color: #999;
+}
+
+.lb_label.active {
+    color: #FFF;
+}
+
+.lb_wrap:first-of-type {
+    margin-top: 0;
+}
+
+
+/*==========================================
+ # Motion Type CSS
+==========================================*/
+
+.motion-type {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    z-index: 2;
+}
+
+.motion-type .h1 {
+    text-transform: none;
+    font-size: 2.5em;
+}
+
+.motion-type .h2 {
+    color: #888;
+    font-size: 1.2em;
+}
+
+.motion-type .h1,
+.motion-type .h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0.4em 0;
+    line-height: 30px;
+}
+
+
+/*========== Motion Type End  ============*/
+
+
+/* ============================================================
+	# Blog Section CSS
+============================================================ */
+.travel-blog-body .blog-intro h2 {
+	margin-bottom:0px;
+}
+
+.travel-blog-body .blog-intro h3 { 
+	margin-top:0px;
+}
+
+.travel-blog-body h4 {
+	text-transform:none;
+	padding-top:20px;	
+}
+.project-content .travel-blog-body p {
+	font-size:16px;	
+	float:none;
+}
+
+.travel-blog-body .breadcrumb ul {
+    list-style-type: none;
+    padding-left: 0px;
+    display: inline-block;
+    font-family: 'montserratregular', Helvetica, sans-serif;
+}
+
+.travel-blog-body .breadcrumb ul li {
+    float: left;
+    padding-right: 10px;
+}
+
+.travel-blog-body .breadcrumb ul li.active a {
+	color:#529886 !important;
+}
+
+.travel-blog-body .breadcrumb ul li a:visited {
+	color:#8f8f8f;
+}
+
+.next-destination {
+	width:100%;
+	background-color: #666;
+	padding:30px 0px;
+	margin-top:60px;
+	height:100px;
+}
+
+.next-destination .grid {
+	max-width:80%;
+	margin:0 auto;
+}
+
+figure img.horizontal {
+	width:93%;
+	padding:24px 0;
+}
+
+
+@media only screen and (max-width: 1070px) {
+    .gallery li {}
+}
+
+@media only screen and (max-width: 979px) {
+	#menu a {
+		font-size:.9em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .hero h1 {
+        font-size: 2em;
+        /*margin-bottom: 20px;*/
+        padding: 0 40px;
+    }
+    #main-logo {
+        padding-top: 325px;
+        padding-top: 60vh;
+    }
+    #main-logo img {
+        width: 35%;
+    }
+    #menu li:hover > a {
+        color: #fff;
+    }
+    .gallery li {
+        width: 100%;
+        max-height: 445px;
+        transform: none;
+        transition: none;
+        opacity: 1;
+        margin: 0 0 10px 0;
+        filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+    }
+    .gallery li .name {
+        opacity: 1;
+        font-size: 1.8rem;
+    }
+    .gallery li .name .title {
+        opacity: 1;
+        display: block;
+    }
+    .gallery li img {
+        opacity: .5;
+        filter: grayscale(0.4) blur(2px);
+    }
+    .gallery li:hover .name {
+        transform: none;
+        transition: none;
+        opacity: 1;
+        -webkit-filter: none;
+    }
+    .gallery li:hover:hover img {
+        opacity: .5;
+        transform: none;
+        -webkit-filter: none;
+        transition: none;
+    }
+    .gallery li:hover img {
+        transition: none;
+        opacity: 1;
+    }
+    .section-about .left {
+        width: 100%;
+    }
+    .me {
+        width: 80%;
+        float: none;
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .hero h1 {
+        margin-bottom: 20px;
+    }
+    .contact-info,
+    .hire-me {
+        width: 100%;
+        height: auto;
+    }
+    .hire-me {
+        float: none;
+    }
+    .hire-me h4 {
+        margin-top: 25px;
+    }
+    .social-icons {
+        padding: 25px 0 0 0;
+        margin-bottom: 50px;
+    }
+    .left {
+        width: 100%;
+    }
+    .me {
+        width: 80%;
+        padding-top: 20px;
+    }
+    h1#sec02 {
+        padding-top: 25px;
+    }
+    h1#sec03 {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #main-logo img {
+        width: 45%;
+        width: 25vw;
+    }
+    .me {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-logo {
+        padding-top: 65vh !important;
+    }
+    #tagline {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /*.hero {
+	min-height: 350px;	
+}
+	
+	
+#main-logo {
+	padding-top: 200px;	
+}
+
+#main-logo img {
+	width: 75%;	
+}
+*/
+    h1#sec01,
+    h1#sec02,
+    h1#sec03 {
+        text-align: left;
+        font-size: 1.75em;
+        padding-bottom: 0;
+    }
+    h1#sec01 {
+        margin-left: 15px;
+        padding-top: 0;
+        margin-top: 75px;
+    }
+    h1#sec03 {
+        padding-top: 0;
+    }
+    .section-about {
+        margin: 0 0 50px 0;
+    }
+    .section-about .left {
+        width: 100%;
+        padding: 0 0;
+        margin: 0 0 30px 0;
+    }
+    .me {
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+}

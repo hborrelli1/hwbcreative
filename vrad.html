@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VRAD - Vacation Rentals Around Denver</title>
+  <link rel="stylesheet" href="css/hero-nav.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/project-template.css">
+  <script type="text/javascript" src="jq/jquery.js"></script>
+  <script type="text/javascript" src="jq/menu.jquery.js"></script>
+</head>
+
+<body class="no-img">
+  <header class="main_h">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    <nav id="menu-wrap">
+      <ul id="menu">
+        <li>
+          <a href="index.html#sec01">Projects</a>
+          <ul>
+            <li><a href="./index.html#development">Dev Projects</a></li>
+            <li><a href="./index.html#design">Design Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#sec02">About Me</a></li>
+        <li><a href="index.html#sec04">Travel Blog</a></li>
+        <li><a href="index.html#sec03">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero proteus-header">
+    <h1><span>VRAD</span></h1>
+    <h3>View and favorite rentals around Denver // React</h3>
+  </div>
+  <div class="project-content" id="wrap">
+    <div class="project-intro">
+      <div class="project-description">
+        <h2>VRAD</h2>
+        <h3>React // React Testing Library</h3>
+        <p>VRAD - Vacation Rentals Around Denver is a loose replicate of Airbnb. VRAD allows users to view different areas of Denver and view house listings available for rent. The user can favorite individual listings to refer back to at a later date. This was a paired project during my time at <a class="green-link" href="https://turing.io/" target="_blank">Turing School of Software & Design</a>.</p>
+
+        <!-- button-block end -->
+        <div class="button-block">
+          <a class="button" href="https://github.com/hborrelli1/VRAD" target="_blank"><span id="visit-website">View Code</span></a>
+        </div>
+        <!-- button-block end -->
+
+      </div>
+      <!-- project-description end -->
+
+      <div class="intro-img">
+        <figure>
+          <img class="album" src="./img/VRAD-browser.png" alt="responsive mockup">
+          <figcaption>VRAD App</figcaption>
+        </figure>
+      </div>
+      <!-- intro-img end -->
+    </div>
+    <!-- div project-intro end -->
+
+    <div class="display-section">
+      <div class="text-left">
+        <h4>Learning Goals</h4>
+        <p>For this project we took a TDD approach using React and React Testing Library. More learning goals for this project included writing squaky clean ES6 syntax, Think deeply about React Lifecycle Methods, Write tests for React components and
+          some asynchronous functionality.</p>
+        <figure>
+          <img src="./img/VRAD-areas-view.jpg" alt="VRAD Areas view">
+          <figcaption>VRAD App</figcaption>
+        </figure>
+      </div>
+    </div>
+    <!-- display-sections end -->
+  </div>
+  <!-- project-content end  -->
+  <script>
+    // Sticky Header
+    $(window).scroll(function() {
+
+      if ($(window)) {
+        $('.main_h').addClass('sticky');
+      } else {
+        $('.main_h').removeClass('sticky');
+      }
+    });
+
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+      } else {
+        $('.main_h').addClass('open-nav');
+      }
+    });
+
+    $('.main_h li a').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+      }
+    });
+
+    // Navigation Scroll - ljepo radi materem
+    $('nav a').click(function(event) {
+      var id = $(this).attr("href");
+      var offset = 70;
+      var target = $(id).offset().top - offset;
+      $('html, body').animate({
+        scrollTop: target
+      }, 500);
+      event.preventDefault();
+    });
+  </script>
+  <script>
+    (function() {
+      /* Mobile */
+      $('#menu-wrap').prepend('<div id="menu-trigger"></div>');
+      $("#menu-trigger").on("click", function() {
+        $("#menu").slideToggle();
+      });
+
+      // iPad
+      var isiPad = navigator.userAgent.match(/iPad/i) != null;
+      if (isiPad) $('#menu ul').addClass('no-transition');
+    })();
+  </script>
+</body>
+
+</html>

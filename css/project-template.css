@@ -75,7 +75,10 @@ h4 {
 
 .project-intro {
 	width: 100%;
-	display: block;
+	/* display: block; */
+	display: flex;
+	align-items: flex-start;
+	padding:0 0 50px;
 
 }
 
@@ -86,6 +89,12 @@ h4 {
 
 .project-description {
 	padding-right: 5%;
+}
+
+.project-description .note {
+	display:flex;
+	flex-direction:column;
+	font-size:.875rem;
 }
 
 .intro-img {
@@ -108,7 +117,7 @@ h4 {
 }
 
 .intro-img figure {
-	margin-top: 75px;
+	/* margin-top: 75px; */
 }
 
 .intro-img figcation {
